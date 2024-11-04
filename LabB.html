@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista To-Do</title>
+    <link rel="stylesheet" href="LabB.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista To-Do</h1>
+
+    <input type="text" id="search" placeholder="Szukaj..." oninput="searchTasks()">
+
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <div class="add-task">
+        <input type="text" id="task-input" placeholder="Nowe zadanie..." minlength="3" maxlength="255" required>
+        <input type="datetime-local" id="due-date">
+        <button onclick="addTask()">Dodaj</button>
+    </div>
+</div>
+
+<script src="LabB.js"></script>
+</body>
+</html>
